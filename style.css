@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --PaleBlue: hsl(243, 100%, 93%);
+    --Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: url("images/bg-desktop.png") no-repeat center 300px, var(--VeryDarkBlue);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 926px;
+    height: 207px;
+    display: grid;
+    grid-template-columns: 345px 545px;
+    gap: 30px;
+}
+
+.logo-container {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: var(--DarkBlue);
+    padding-left: 40px;
+    border-radius: 10px 110px 10px 10px;
+}
+
+.logo-container img {
+    width: 145px;
+    height: 40px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-container>div {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-container img {
+    width: 20px;
+    height: 25px;
+}
+
+.icons-container .icon-two {
+    width: 25px;
+    height: 20px;
+}
+
+.icons-container .icon-tree {
+    width: 25px;
+    height: 14px;
+}
+
+.storage-container {
+    height: 155px;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: var(--DarkBlue);
+    position: relative;
+    border-radius: 10px;
+    color: var(--PaleBlue);
+}
+
+.storage-container span {
+    color: white;
+    font-weight: 700;
+}
+
+.storage-container P {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.cursor {
+    width: 445px;
+    height: 20px;
+    background-color: hsl(229, 77%, 17%);
+    margin-left: 30px;
+    margin-top: 18px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.progres {
+    position: absolute;
+    width: 330px;
+    height: 14px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 30px;
+    top: 77px;
+    left: 32px;
+}
+
+.ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 79px;
+    left: 350px;
+    background-color: var(--PaleBlue);
+}
+
+.globe{
+    position: absolute;
+ width: 186px;
+ height: 70px;
+ background-color: white; 
+ top: -38px;
+ left: 290px;
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+
+}
+
+
+.globe p{
+    display: flex;
+    align-items: center;
+color: var(--VeryDarkBlue);
+ font-size: 38px; 
+ font-weight: 700;  
+}
+
+.globe span{
+    color: var(--GrayishBlue);
+     font-size: 12px; 
+     font-weight: 700; 
+     margin-left: 10px; 
+    }
+
+    .triangle{
+        position: absolute; 
+        background-color: white;
+        width: 20px; 
+        height: 25px;
+        top: 15px;
+        left: 456px;
+        transform: skew(180deg, 34deg);
+    }   
+
+.text-container{
+margin-top: -30px;
+width: 475px;
+display: flex;
+justify-content: space-between;
+font-weight: 700; 
+color: var(--PaleBlue);
+font-size: 12px;
+
+}
+.attribution {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
