@@ -146,7 +146,7 @@ main {
 }
 
 
-.globe h1{
+.globe p{
     display: flex;
     align-items: center;
 color: var(--VeryDarkBlue);
